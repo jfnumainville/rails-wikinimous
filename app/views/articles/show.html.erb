@@ -2,3 +2,8 @@
 <p><%= @article.content %></p>
 
 <%= link_to "<< Back to articles list", root_path %>
+<br>
+<%= link_to "Edit this article! ", edit_article_path %>
+<br>
+<%= link_to "Delete this article! ", article_path(@article), method: :delete,
+            data: { confirm: "Are you sure?" } %>
